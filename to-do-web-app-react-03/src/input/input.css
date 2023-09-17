@@ -1,0 +1,35 @@
+#task-input{
+    padding: 1rem;
+    border-radius: 6px;
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 3rem 0;
+}
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+#task-input button{
+    background-color: rgb(88, 23, 88);
+    color: #fff;
+    border: 1px solid rgb(88, 23, 88);
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+}
+#task-input button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    #task-input{
+        width: 17rem;
+    }
+    #task-input button{
+        padding: 0.5rem 1.8rem;
+    }
+}

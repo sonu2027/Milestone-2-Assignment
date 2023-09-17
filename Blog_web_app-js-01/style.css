@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 5vw;
+    align-items: center;
+    position: sticky;
+    top: 0rem;
+    background-color: #fff;
+    padding-top: 0.8rem;
+    padding-bottom: 0.4rem;
+}
+#plus-icon, #back-arrow{
+    width: 2rem;
+    border-radius: 2rem;
+}
+#plus-icon, #back-arrow:hover{
+    cursor: pointer;
+}
+#plus-icon:hover, #cross-icon:hover{
+    cursor: pointer;
+}
+form{
+    display: none;
+}
+#form-items{
+    position: fixed;
+    border: 1px solid rgb(155, 209, 231);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 22rem;
+    background-color: rgb(238, 247, 251);
+    margin-top: 20rem;
+}
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form input, textarea{
+    width: 20rem;
+    height: 2rem;
+   
+}
+input:focus, textarea:focus{
+   outline: none;
+}
+#add-blog-button{
+    padding: 8px 6rem;
+    background-color: rgb(72, 72, 198);
+    border: 1px solid rgb(72, 72, 198);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+}
+#add-blog-button:hover{
+    color: rgb(11, 11, 11);
+    background-color: #fff;
+    cursor:pointer;
+    border: 1px solid rgb(11, 11, 11);
+}
+#cross-image{
+    width: 22rem;
+    height: 3rem;
+    text-align: right;
+}
+#blog{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#blog-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 3rem 8rem;
+}
+.blog-items{
+    background-color: rgb(244, 252, 255);
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(187, 182, 182);
+    overflow: hidden;
+}
+.blog-items h3{
+    text-align: center;
+    margin: 1rem 0;
+}
+.blog-items p{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.blog-button{
+    padding: 0.5rem 5rem;
+    border-radius: 4px;
+    border: 1px solid rgb(247, 177, 177);
+    background-color: rgb(247, 177, 177);
+    color: rgb(223, 40, 40);
+}
+.blog-button:hover{
+    color: rgb(212, 85, 85);
+    background-color: #fff;
+    cursor: pointer;
+}
+.blog-items img{
+    height: 13rem;
+    width: 16rem;
+    border-radius: 10px;
+    transition: all ease 1s;
+}
+.blog-items img:hover{
+    scale: 1.13;
+}
+
+
+#back-arrow{
+    display: none;
+}
+.classOfH3P1andImg{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(72, 72, 198);
+    padding: 0.6rem;
+    column-gap: 5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.h3p1andimgclassattr{
+    height: 12rem;
+    width: 24rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all ease 1s;
+}
+.h3p1andimgclassattr:hover{
+    scale: 1.1;
+}
+.classOfH3InIndividualBlogItems{
+    color: #fff;
+}
+.classOfH3AndP1{
+    color: #ece1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    row-gap: 2rem;
+}
+.individual-blog-items{
+    padding: 1rem 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(237, 247, 250);
+    width: 80vw;
+}
+footer{
+    margin-top: 65vh;
+}
+footer p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+ #backgroundButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#backgroundButton #dark{
+    padding: 1rem;
+    border-right: none;
+    border-radius: 1rem;
+    background-color: rgb(120, 4, 228);
+    border: none;
+}
+#backgroundButton #dark:hover{
+    cursor: pointer;
+}
+#parent-button{
+    padding-right: 1.6rem;
+    border: 2px solid rgb(161, 110, 110);
+    border-radius: 1.2rem;
+}
+
+@media screen and (max-width:1200px){
+    #blog-page{
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:1000px){
+    #blog-page{
+        grid-template-columns: 1fr 1fr ;
+        gap: 3rem 8rem;
+    }
+    #blog{
+        margin-top: 4rem;
+    }
+    .classOfH3P1andImg{
+        column-gap: 2rem;
+    }
+}
+@media screen and (max-width:800px){
+    .classOfH3P1andImg{
+        column-gap: 1rem;
+    }
+    .h3p1andimgclassattr{
+        height: 10rem;
+        width: 20rem;
+    }
+    .individual-blog-items{
+        width: 85vw;
+    }
+}
+@media screen and (max-width:750px){
+    #blog-page{
+        grid-template-columns: 1fr 1fr ;
+        gap: 3rem 1rem;
+    }
+    #blog{
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:625px){
+    #blog-page{
+        font-size: 90%;
+    }
+    .blog-items{
+        width: 12rem;
+        padding: 1rem;
+    }
+    .blog-items button{
+        padding: 0.5rem 4rem;
+        border-radius: 4px;
+    }
+    .blog-items img{
+        height: 10rem;
+        width: 12rem;
+        border-radius: 10px;
+    }
+    #blog{
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:600px){
+    .classOfH3P1andImg{
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .classOfH3InIndividualBlogItems{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .individual-blog-items{
+        width: 80vw;
+    }
+    .h3p1andimgclassattr{
+        height: 16rem;
+        width: 74vw;
+    }
+    .classOfH3AndP1{
+        row-gap: 1.5rem;
+    }
+    .classOfH3P1andImg {
+        padding: 0.8rem;
+    }
+}
+@media screen and (max-width:525px){
+    #blog-page{
+        font-size: 90%;
+        grid-template-columns: 1fr;
+        gap: 3rem 1rem;
+    }
+    .blog-items{
+        width: 16rem;
+        padding: 1rem;
+    }
+    .blog-items img{
+        height: 13rem;
+        width: 16rem;
+        border-radius: 10px;
+    }
+    #blog{
+        margin-top: 3rem;
+    }
+    .h3p1andimgclassattr{
+        height: 13rem;
+        width: 74vw;
+    }
+    #form-items{
+        width: 20rem;
+        margin-top: 22rem;
+    }
+    #form input, textarea {
+        width: 20rem;
+        height: 2rem;
+    }
+    #form input, textarea {
+        width: 17rem;
+        height: 1.8rem;
+    }
+    #cross-icon{
+        margin-right: 1rem;
+    }
+}

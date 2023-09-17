@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <nav id="nav">
+        <h1>PW Skill Blog</h1>
+        <img id="plus-icon" src="./Assets/plus-icon.png" alt="plus-icon" />
+        <img id="back-arrow" src="./Assets/back-arrow.png" alt="back-arrow" />
+    </nav>
+
+    <div id="backgroundButton">
+        <p id="background-dark-para" style="font-size: 1.5rem; margin-right:1rem;">Switch to dark</p>
+        <div id="parent-button">
+            <button onClick="switchToDark()" id="dark"></button>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <form id="form">
+        <div id="form-container">
+            <div id="form-items">
+                <div id="cross-image">
+                    <img id="cross-icon" src="./Assets/cross-icon.png" alt="cross-icon">
+                </div>
+                <input id="blog-URL" type="text" placeholder="Enter blog post URL : " /><br />
+                <input id="blog-title" type="text" placeholder="Enter blog title : " /><br />
+                <input id="blog-description" type="text" placeholder="Enter blog description : " /><br />
+                <textarea id="blog-content" cols="30" rows="10" placeholder="Write..."></textarea><br />
+                <input id="add-blog-button" onclick="addBlog()" type="button" value="Add Blog">
+            </div>
+        </div>
+    </form>
+
+    <div id="blog">
+        <div id="blog-page-parent">
+            <div id="blog-page">
+
+            </div>
+        </div>
+        <div id="individual-blog">
+
+        </div>
+    </div>
+    <footer>
+        <p id="footer-para" >Developed by Sonu Mondal</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

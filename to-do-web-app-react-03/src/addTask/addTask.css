@@ -1,0 +1,83 @@
+.task-adding-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: -2rem;
+    background-color: rgb(88, 23, 88);
+    width: 90vw;
+}
+body{
+    background-color: #d1d0d0;
+}
+#main-div{
+    margin: 1rem;
+    background-color: rgb(88, 23, 88);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    overflow: scroll;
+}
+.task{
+    margin: 2rem 0;
+    background-color: rgb(28, 34, 50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.parent-task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 1.5rem;
+    padding: 2rem 9rem;
+}
+.refresh-icon{
+    width: 3rem;
+    height: 2rem;
+}
+@media screen and (max-width:1250px) {
+    .parent-task{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:1000px) {
+    .parent-task{
+        padding: 2rem 4rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .parent-task{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:600px) {
+    .task button{
+       width: 11rem;
+       padding: 0.5rem 2.5rem;
+    }
+    .parent-task{
+        grid-template-columns: 1fr 1fr;
+    }
+    #main-div{
+        margin: 0;
+    }
+    #main-div{
+        margin: 0;
+    }
+}
+@media screen and (max-width:570px) {
+    .parent-task{
+        grid-template-columns: 1fr;
+    }
+    #task-input{
+        padding: 0.5rem;
+    }
+    .task{
+       width: 14rem;
+    }
+}
